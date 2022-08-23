@@ -9,9 +9,13 @@ public class BinarySearch {
 
         /** sort item in an array first */
         Arrays.sort(mylist);
+
+        /** declare points **/
         int startpoint = 0;
         int endpoint = mylist.length - 1;
         int midpoint = (startpoint + endpoint) / 2;
+
+        /** loop through the list */
         while (startpoint <= endpoint){
             if (
                     mylist[midpoint] < target
