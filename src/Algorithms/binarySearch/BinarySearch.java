@@ -1,6 +1,6 @@
-package binarySearch;
+package Algorithms.binarySearch;
 
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
 
 public class BinarySearch {
@@ -41,6 +41,6 @@ public class BinarySearch {
         BinarySearch mySearchInstance = new BinarySearch();
         int[] mylist = new int[]{0, 4, 5, 23, 1};
 
-        mySearchInstance.searchBinary(mylist,23);
+        mySearchInstance.searchBinary(mylist,73);
     }
 }
