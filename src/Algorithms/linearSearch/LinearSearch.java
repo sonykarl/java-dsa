@@ -1,5 +1,7 @@
 package Algorithms.linearSearch;
 
+import java.util.Arrays;
+
 public class LinearSearch {
 
     void searchLinearly(String[] mylist, String target){
@@ -33,6 +35,9 @@ public class LinearSearch {
                 break;
             }
         }
+
+        /** method three */
+        Arrays.stream(mylist).forEach(System.out::println);
     }
     public static void main(String[] args){
         String[] mylist = {"cow", "goat","pig","dog","chicken","penguin"};
