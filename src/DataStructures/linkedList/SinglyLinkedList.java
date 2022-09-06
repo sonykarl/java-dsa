@@ -13,6 +13,7 @@ public class SinglyLinkedList {
         }
     }
 
+
     public Node head = null;
     public Node tail = null;
 
@@ -29,6 +30,26 @@ public class SinglyLinkedList {
         }
     }
 
+    public Node find(int data){
+        Node current = head;
+
+        if (current == null){
+            return null;
+        }
+
+        while (current.next != null){
+            if (current == null){
+                return null;
+            } else if (current.data == data){
+                return current;
+            }
+            else {
+                current = current.next;
+            }
+        }
+
+        return current;
+    }
     public void display(){
         Node current = head;
 
