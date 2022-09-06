@@ -41,7 +41,8 @@ public class SinglyLinkedList {
             if (current == null){
                 return null;
             } else if (current.data == data){
-                return current;
+                System.out.println(current);
+                break;
             }
             else {
                 current = current.next;
@@ -77,6 +78,7 @@ public class SinglyLinkedList {
         myLinkedList.addNode(48);
 
         myLinkedList.display();
+        myLinkedList.find(45);
 
     }
 }
